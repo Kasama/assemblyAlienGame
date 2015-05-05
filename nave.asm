@@ -5,17 +5,50 @@ Tiro: var #1
 TiroPos: var #1
 HasTiro: var #1
 Random: var #20
-AlienPos: var #8
+AlienPos: var #40
 
-static AlienPos + #0, #1
-static AlienPos + #0, #41
-static AlienPos + #0, #40
-static AlienPos + #0, #39
-static AlienPos + #0, #1
-static AlienPos + #0, #41
-static AlienPos + #0, #40
-static AlienPos + #0, #39
-
+static AlienPos + #0, #223
+static AlienPos + #1, #225
+static AlienPos + #2, #227
+static AlienPos + #3, #229
+static AlienPos + #4, #263
+static AlienPos + #5, #265
+static AlienPos + #6, #267
+static AlienPos + #7, #269
+static AlienPos + #8, #303
+static AlienPos + #9, #305
+static AlienPos + #10, #307
+static AlienPos + #11, #309
+static AlienPos + #12, #343
+static AlienPos + #13, #345
+static AlienPos + #14, #347
+static AlienPos + #15, #349
+static AlienPos + #16, #383
+static AlienPos + #17, #385
+static AlienPos + #18, #387
+static AlienPos + #19, #389
+static AlienPos + #20, #423
+static AlienPos + #21, #425
+static AlienPos + #22, #427
+static AlienPos + #23, #429
+static AlienPos + #24, #463
+static AlienPos + #25, #465
+static AlienPos + #26, #467
+static AlienPos + #27, #469
+static AlienPos + #28, #503
+static AlienPos + #29, #505
+static AlienPos + #30, #507
+static AlienPos + #31, #509
+static AlienPos + #32, #543
+static AlienPos + #33, #545
+static AlienPos + #34, #547
+static AlienPos + #35, #549
+static AlienPos + #36, #583
+static AlienPos + #37, #585
+static AlienPos + #38, #587
+static AlienPos + #39, #589
+                          
+                          
 static Random + #0, #3
 static Random + #1, #4
 static Random + #2, #2
@@ -49,26 +82,26 @@ startScreenl1  : string "****************************************"
 startScreenl2  : string "****************************************"
 startScreenl3  : string "****************************************"
 startScreenl4  : string "****************************************"
-startScreenl5  : string "****************************************"
-startScreenl6  : string "****************************************"
-startScreenl7  : string "****************************************"
-startScreenl8  : string "****************************************"
-startScreenl9  : string "****************************************"
-startScreenl10 : string "****************************************"
-startScreenl11 : string "****************************************"
-startScreenl12 : string "****************************************"
-startScreenl13 : string "****************************************"
-startScreenl14 : string "****************************************" ; pos 563 on the screen
-startScreenl15 : string "****************************************"
-startScreenl16 : string "****************************************"
-startScreenl17 : string "****************************************"
-startScreenl18 : string "****************************************"
-startScreenl19 : string "****************************************"
-startScreenl20 : string "****************************************"
-startScreenl21 : string "****************************************"
-startScreenl22 : string "****************************************"
-startScreenl23 : string "****************************************"
-startScreenl24 : string "****************************************"
+startScreenl5  : string "***********************         ********"
+startScreenl6  : string "***********************         ********"
+startScreenl7  : string "***********************         ********"
+startScreenl8  : string "***********************         ********"
+startScreenl9  : string "***********************         ********"
+startScreenl10 : string "***********************         ********"
+startScreenl11 : string "***********************         ********"
+startScreenl12 : string "***********************         ********"
+startScreenl13 : string "***********************         ********"
+startScreenl14 : string "***********************         ********" ; pos 563 on the screen
+startScreenl15 : string "***********************         ********"
+startScreenl16 : string "***********************         ********"
+startScreenl17 : string "***********************         ********"
+startScreenl18 : string "***********************         ********"
+startScreenl19 : string "***********************         ********"
+startScreenl20 : string "***********************         ********"
+startScreenl21 : string "***********************         ********"
+startScreenl22 : string "***********************         ********"
+startScreenl23 : string "***********************         ********"
+startScreenl24 : string "***********************         ********"
 startScreenl25 : string "****************************************"
 startScreenl26 : string "****************************************"
 startScreenl27 : string "****************************************" ; pos 1084 on the screen
