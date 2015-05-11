@@ -12,6 +12,7 @@ static AlienChar + #0, #'+'
 AlienOrientation: var #1
 static AlienOrientation + #0, #1
 
+; AlienPos 0 to 39 --------------------------------------------{
 static AlienPos + #0, #223
 static AlienPos + #1, #225
 static AlienPos + #2, #227
@@ -52,38 +53,103 @@ static AlienPos + #36, #943
 static AlienPos + #37, #945
 static AlienPos + #38, #947
 static AlienPos + #39, #949
+;--------------------------------------------------------------}
                           
 static HasTiro + #0, #0
 static Tiro + #0,#'-'
 static TiroPos + #0, #0
-static NavePos + #0, #0
+static NavePos + #0, #521
 static Nave + #0, #'>'
 
-; Start Screen-------------------------------------------------{
+; Start Screen RED---------------------------------------------{
+startScreenRed    : string "                                        "
+startScreenRedl1  : string "                                        "
+startScreenRedl2  : string "                                        "
+startScreenRedl3  : string "                                        "
+startScreenRedl4  : string "                                        "
+startScreenRedl5  : string "                                        "
+startScreenRedl6  : string "                                        "
+startScreenRedl7  : string "                                        "
+startScreenRedl8  : string "                                        "
+startScreenRedl9  : string "   III N  N V V  A  DD  EEEE RRRR SSS   "
+startScreenRedl10 : string "    I  NN N V V A A D D E    R  R S     "
+startScreenRedl11 : string "    I  N NN V V AAA D D EE   RRRR SSS   "
+startScreenRedl12 : string "    I  N NN V V A A D D E    R R    S   "
+startScreenRedl13 : string "   III N  N  V  A A DD  EEEE R  R SSS   "
+startScreenRedl14 : string "                                        " ; pos 563 on the screen
+startScreenRedl15 : string "                                        "
+startScreenRedl16 : string "                                        "
+startScreenRedl17 : string "                                        "
+startScreenRedl18 : string "                                        "
+startScreenRedl19 : string "                                        "
+startScreenRedl20 : string "                                        "
+startScreenRedl21 : string "                                        "
+startScreenRedl22 : string "                                        "
+startScreenRedl23 : string "                                        "
+startScreenRedl24 : string "                                        "
+startScreenRedl25 : string "                                        "
+startScreenRedl26 : string "                                        "
+startScreenRedl27 : string "                                        " ; pos 1084 on the screen
+startScreenRedl28 : string "                                        "
+startScreenRedl29 : string "                                        "
+;--------------------------------------------------------------}
+; Start Screen YELLOW------------------------------------------{
+startScreenYellow    : string "                                        "
+startScreenYellowl1  : string "                                        "
+startScreenYellowl2  : string "   CCCCC    A       A    SSSSS OOOOO    "
+startScreenYellowl3  : string "   C       A A     A A   S     O   O    "
+startScreenYellowl4  : string "   C      A   A   A   A  S     O   O    "
+startScreenYellowl5  : string "   C     AAAAAAA AAAAAAA SSSSS O   O    "
+startScreenYellowl6  : string "   C     A     A A     A     S O   O    "
+startScreenYellowl7  : string "   CCCCC A     A A     A SSSSS OOOOO    "
+startScreenYellowl8  : string "                                        "
+startScreenYellowl9  : string "                                        "
+startScreenYellowl10 : string "                                        "
+startScreenYellowl11 : string "                                        "
+startScreenYellowl12 : string "                                        "
+startScreenYellowl13 : string "                                        "
+startScreenYellowl14 : string "                                        " ; pos 563 on the screen
+startScreenYellowl15 : string "                                        "
+startScreenYellowl16 : string "                                        "
+startScreenYellowl17 : string "                                        "
+startScreenYellowl18 : string "                                        "
+startScreenYellowl19 : string "                                        "
+startScreenYellowl20 : string "                                        "
+startScreenYellowl21 : string "                                        "
+startScreenYellowl22 : string "                                        "
+startScreenYellowl23 : string "                                        "
+startScreenYellowl24 : string "                                        "
+startScreenYellowl25 : string "                                        "
+startScreenYellowl26 : string "                                        "
+startScreenYellowl27 : string "                                        " ; pos 1084 on the screen
+startScreenYellowl28 : string "                                        "
+startScreenYellowl29 : string "                                        "
+;--------------------------------------------------------------}
+; Start Screen WHITE-------------------------------------------{
 startScreen    : string "                                        "
 startScreenl1  : string "                                        "
 startScreenl2  : string "                                        "
 startScreenl3  : string "                                        "
 startScreenl4  : string "                                        "
-startScreenl5  : string "                       * * * *          "
+startScreenl5  : string "                                        "
 startScreenl6  : string "                                        "
-startScreenl7  : string "                       * * * *          "
+startScreenl7  : string "                                        "
 startScreenl8  : string "                                        "
-startScreenl9  : string "                       * * * *          "
+startScreenl9  : string "                                        "
 startScreenl10 : string "                                        "
-startScreenl11 : string "                       * * * *          "
+startScreenl11 : string "                                        "
 startScreenl12 : string "                                        "
-startScreenl13 : string "                       * * * *          "
+startScreenl13 : string "                                        "
 startScreenl14 : string "                                        " ; pos 563 on the screen
-startScreenl15 : string "                       * * * *          "
+startScreenl15 : string "     Press enter to start the game      "
 startScreenl16 : string "                                        "
-startScreenl17 : string "                       * * * *          "
+startScreenl17 : string "                                        "
 startScreenl18 : string "                                        "
-startScreenl19 : string "                       * * * *          "
+startScreenl19 : string "                                        "
 startScreenl20 : string "                                        "
-startScreenl21 : string "                       * * * *          "
+startScreenl21 : string "                                        "
 startScreenl22 : string "                                        "
-startScreenl23 : string "                       * * * *          "
+startScreenl23 : string "                                        "
 startScreenl24 : string "                                        "
 startScreenl25 : string "                                        "
 startScreenl26 : string "                                        "
@@ -91,7 +157,7 @@ startScreenl27 : string "                                        " ; pos 1084 on
 startScreenl28 : string "                                        "
 startScreenl29 : string "                                        "
 ;--------------------------------------------------------------}
-; Start Screen-------------------------------------------------{
+; Game Screen -------------------------------------------------{
 gameScreen    : string "                                        "
 gameScreenl1  : string "                                        "
 gameScreenl2  : string "                                        "
@@ -102,13 +168,13 @@ gameScreenl6  : string "                                        "
 gameScreenl7  : string "                                        "
 gameScreenl8  : string "                                        "
 gameScreenl9  : string "                                        "
-gameScreenl10 : string "                                        "
-gameScreenl11 : string "                                        "
-gameScreenl12 : string "                                        "
-gameScreenl13 : string "                                        "
-gameScreenl14 : string "                                        " ; pos 563 on the screen
-gameScreenl15 : string "                                        "
-gameScreenl16 : string "                                        "
+gameScreenl10 : string "                                      F "
+gameScreenl11 : string "C                                     E "
+gameScreenl12 : string "A                                     D "
+gameScreenl13 : string "A                                     E "
+gameScreenl14 : string "S                                     R " ; pos 563 on the screen
+gameScreenl15 : string "O                                     A "
+gameScreenl16 : string "                                      L "
 gameScreenl17 : string "                                        "
 gameScreenl18 : string "                                        "
 gameScreenl19 : string "                                        "
@@ -124,32 +190,39 @@ gameScreenl28 : string "                                        "
 gameScreenl29 : string "                                        "
 ;--------------------------------------------------------------}
 
-;MAIN----------------------------------
-main:
+main: ; main function; void () {
+
 	loadn r0, #startScreen
-	loadn r2, #1199
-	load r1, NavePos
-	;sub r2, r2, r1
+	loadn r1, #0
+	call printScreen
+	loadn r0, #startScreenRed
+	loadn r1, #2304
+	call printScreenTransp
+	loadn r0, #startScreenYellow
+	loadn r1, #2816
+	call printScreenTransp
+	call waitForEnter
+	loadn r0, #gameScreen
+	loadn r1, #0
 	call printScreen
 
 	loadn r0, #0
 	loadn r1, #50
 	Loop: 
 		mod r3, r0, r1
-		jnz LoopMoveNaveTiro
-			call moveAlien
-		LoopMoveNaveTiro:
-			call moveNave
-			call moveTiro
-			call Delay
-			inc r0
-			cmp r0, r1
+		cz moveAlien ; move os aliens a cada 50 clocks
+		call moveNave
+		call moveTiro
+		call Delay
+		inc r0
+		cmp r0, r1
 		jne Loop
-		loadn r0, #0
+		loadn r0, #0 ; a cada 50 clocks, reinicia o contador
 	jmp Loop
 
 halt
-
+;}
+;--------------------------------------------------------------
 gameOverPlayerLost: ; game is over, you LOST!; void () {
 
 	pop r5
@@ -180,8 +253,6 @@ gameOverWinner: ; game is over, you WIN!; void () {
 rts
 ;}
 ;--------------------------------------------------------------
-;--------------------------------------
-
 moveAlien: ; movimenta todos os aliens na tela; void () {
 
 	push r0
@@ -239,6 +310,8 @@ moveAlien: ; movimenta todos os aliens na tela; void () {
 		moveAlien_EndIf:
 		; imprime alien
 		load r3, AlienChar
+		loadn r5, #2304
+		add r3, r3, r5
 		outchar r3, r2
 		loadn r5, #AlienPos
 		add r5, r5, r0
@@ -279,30 +352,28 @@ moveAlien_loopVerificaFim:
 
 ;}
 ;--------------------------------------------------------------
+Delay: ; a long for loop to delay the execution; void () {
 
-;DELAY---------------------------------
-Delay:
-						;Utiliza Push e Pop para nao afetar os Ristradores do programa principal
 	push r0
 	push r1
-	
+
 	loadn r1, #100  ; a
-   delay_volta2:				; contador de tempo quebrado em duas partes (dois loops de decremento)
+	delay_volta2:				; contador de tempo quebrado em duas partes (dois loops de decremento)
 	loadn r0, #3000	; b
-   delay_volta: 
+	delay_volta: 
 	dec r0					; (4*a + 6)b = 1000000  == 1 seg  em um clock de 1MHz
 	jnz delay_volta	
 	dec r1
 	jnz delay_volta2
 	
+
 	pop r1
 	pop r0
-	
-	rts							;return
 
-;-------------------------------------
-
-printNave:
+rts
+;}
+;--------------------------------------------------------------
+printNave: ; imprime a nave na tela; void () {
 
 	push r0 
 	push r1
@@ -310,7 +381,7 @@ printNave:
 
 	load  r0, Nave
 	load  r1, NavePos
-	loadn r2, #1024
+	loadn r2, #2816
 
 	add r0, r0, r2
 	outchar r0, r1
@@ -320,7 +391,8 @@ printNave:
 	pop r0
 
 rts
-;------------------------------------
+;}
+;--------------------------------------------------------------
 moveTiro: ; Move o tiro; void () {
 
 	push r0
@@ -344,7 +416,7 @@ moveTiro: ; Move o tiro; void () {
 	add r6, r6, r0
 	loadi r7, r6 ; carrega o caracter da tela da posição do tiro
 	outchar r7, r2 ; imprime
-	loadn r5, #39
+	loadn r5, #38
 	loadn r0, #1
 	mod r3, r2, r4 ; checa se o tiro saiu da tela
 	cmp r3, r5
@@ -357,21 +429,22 @@ moveTiro: ; Move o tiro; void () {
 		loadn r7, #AlienPos
 		add r7, r7, r6
 		loadi r7, r7
-		cmp r2, r7
+		cmp r2, r7 ; verifica se o tiro bateu no alien
 		jne moveTiro_Loop_VerificaFim
+		; tiro bateu
 		loadn r1, #gameScreen
 		add r1, r1, r2
 		loadi r1, r1
-		outchar r1, r2
+		outchar r1, r2 ; apaga o alien atingido
 		loadn r1, #0
-		store HasTiro, r1
+		store HasTiro, r1 ; desliga o tiro (não vara o alien)
 		loadn r1, #AlienPos
 		add r1, r1, r6
-		loadn r7, #1200
+		loadn r7, #1200 ; desativa o alien
 		storei r1, r7
 		load r1, AlienCount
-		dec r1
-		jz gameOverWinner
+		dec r1 ; diminui o numero total de aliens na tela
+		jz gameOverWinner ; acabaram os aliens
 		store AlienCount, r1
 		jmp moveTiroSai
 	jne moveTiro_Loop
@@ -382,7 +455,7 @@ moveTiro: ; Move o tiro; void () {
 	outchar r7, r2 ; imprime o tiro
 	jmp moveTiroSai
 
-moveTiro_Loop_VerificaFim:
+moveTiro_Loop_VerificaFim: ; verifica se é o ultimo alien
 	push r1
 	loadn r1, #0
 	cmp r6, r1
@@ -390,13 +463,13 @@ moveTiro_Loop_VerificaFim:
 	jeq moveTiro_LoopFim
 	jmp moveTiro_Loop
 
-moveTiroSemTiro:
+moveTiroSemTiro: ; desativa o tiro se ele saiu da tela
 	dec r0
 	store HasTiro, r0
 	outchar r7, r2
 	jmp moveTiroSai
 
-moveTiroSai:
+moveTiroSai: ; sai da função
 	pop r7
 	pop r6
 	pop r5
@@ -409,8 +482,8 @@ moveTiroSai:
 rts
 ;}
 ;--------------------------------------------------------------
+atualizaPos: ; le do teclado e movimenta a nave; void () {
 
-atualizaPos:
 	push r0
 	push r1
 	push r2
@@ -539,9 +612,9 @@ moveNave:
 	pop r0
 
 rts
-
-;==============================================================
-printScreen: ; Print any screen; void (r0 = Message Address) ;{
+;}
+;--------------------------------------------------------------
+printScreenTransp: ; Print any screen; void (r0 = Message Address, r1 = color) ;{
 
 	push r0
 	push r1
@@ -549,11 +622,41 @@ printScreen: ; Print any screen; void (r0 = Message Address) ;{
 	push r3
 	push r4
 
+	mov r2, r1	  ; place the color into r2
 	mov r1, r0    ; place the message address into r1
 	loadn r0, #0  ; line counter
 	loadn r4, #41 ; next address
 	loadn r3, #30 ; for counter (30 lines)
-	loadn r2, #0  ; white color
+	printScreenTransp_loop:
+		call printStrTransp
+		add r0, r0, r4 ; r0 + 41 - 1 = next line
+		dec r0
+		add r1, r1, r4 ; r1 + 41 = next Address
+		dec r3         ; decrement line number
+	jnz printScreenTransp_loop ; if zero, gtfo
+	
+	pop r4
+	pop r3
+	pop r2
+	pop r1
+	pop r0
+
+	rts
+;}
+;--------------------------------------------------------------
+printScreen: ; Print any screen; void (r0 = Message Address, r1 = color) ;{
+
+	push r0
+	push r1
+	push r2
+	push r3
+	push r4
+
+	mov r2, r1	  ; place the color into r2
+	mov r1, r0    ; place the message address into r1
+	loadn r0, #0  ; line counter
+	loadn r4, #41 ; next address
+	loadn r3, #30 ; for counter (30 lines)
 	printScreen_loop:
 		call printStr
 		add r0, r0, r4 ; r0 + 41 - 1 = next line
@@ -571,7 +674,43 @@ printScreen: ; Print any screen; void (r0 = Message Address) ;{
 	rts
 ;}
 ;--------------------------------------------------------------
+printStrTransp: ; Print a string until \0 don't print ' '; void (r0 = Screen Pos, r1 = message Address, r2 = color) ;{
+				
+	push r0	; Posicao da tela que o primeiro caractere da mensagem sera' impresso
+	push r1	; endereco onde comeca a mensagem
+	push r2	; cor da mensagem
+	push r3	; Criterio de parada
+	push r4	; Recebe o codigo do caractere da Mensagem
+	push r5
+	
+	loadn r3, #'\0'	; Criterio de parada
+	loadn r5, #' '
 
+	printStrTranspLoop:	
+		loadi r4, r1		; aponta para a memoria no endereco r1 e busca seu conteudo em r4
+		cmp r4, r3			; compara o codigo do caractere buscado com o criterio de parada
+		jeq printStrTranspLoopExit	; goto Final da rotina
+		cmp r4, r5
+		jeq printStrTranspLoopNoPrint
+		add r4, r2, r4		; soma a cor (r2) no codigo do caractere em r4
+		outchar r4, r0		; imprime o caractere cujo codigo está em r4 na posicao r0 da tela
+		printStrTranspLoopNoPrint:
+		inc r0				; incrementa a posicao que o proximo caractere sera' escrito na tela
+		inc r1				; incrementa o ponteiro para a mensagem na memoria
+	jmp printStrTranspLoop		; goto Loop
+	
+	printStrTranspLoopExit:	
+	;---- Desempilhamento: resgata os valores dos registradores utilizados na Subrotina da Pilha
+
+	pop r5
+	pop r4	
+	pop r3
+	pop r2
+	pop r1
+	pop r0
+	rts		; retorno da subrotina
+;}
+;--------------------------------------------------------------
 printStr: ; Print a string until \0; void (r0 = Screen Pos, r1 = message Address, r2 = color) ;{
 				
 	push r0	; Posicao da tela que o primeiro caractere da mensagem sera' impresso
@@ -602,3 +741,20 @@ printStr: ; Print a string until \0; void (r0 = Screen Pos, r1 = message Address
 	rts		; retorno da subrotina
 ;}
 ;--------------------------------------------------------------
+waitForEnter: ; just wait for a enter; void () ;{
+	push r0
+	push r1
+
+	loadn r1, #13 ; enter keycode
+	waitForEnter_Loop:
+		inchar r0
+		cmp r0, r1 ; compare with enter
+	jne waitForEnter_Loop
+
+	pop r1
+	pop r0
+
+rts
+;}
+;--------------------------------------------------------------
+
