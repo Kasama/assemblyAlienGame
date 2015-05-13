@@ -61,6 +61,8 @@ static TiroPos + #0, #0
 static NavePos + #0, #521
 static Nave + #0, #'>'
 
+currentScreen: var #1200
+
 ; Start Screen RED---------------------------------------------{
 startScreenRed    : string "                                        "
 startScreenRedl1  : string "                                        "
@@ -157,7 +159,7 @@ startScreenl27 : string "                                        " ; pos 1084 on
 startScreenl28 : string "                                        "
 startScreenl29 : string "                                        "
 ;--------------------------------------------------------------}
-; Game Screen -------------------------------------------------{
+; Game Screen WHITE--------------------------------------------{
 gameScreen    : string "                                        "
 gameScreenl1  : string "                                        "
 gameScreenl2  : string "                                        "
@@ -168,13 +170,13 @@ gameScreenl6  : string "                                        "
 gameScreenl7  : string "                                        "
 gameScreenl8  : string "                                        "
 gameScreenl9  : string "                                        "
-gameScreenl10 : string "                                      F "
-gameScreenl11 : string "C                                     E "
-gameScreenl12 : string "A                                     D "
-gameScreenl13 : string "A                                     E "
-gameScreenl14 : string "S                                     R " ; pos 563 on the screen
-gameScreenl15 : string "O                                     A "
-gameScreenl16 : string "                                      L "
+gameScreenl10 : string "                                        "
+gameScreenl11 : string "                                        "
+gameScreenl12 : string "                                        "
+gameScreenl13 : string "                                        "
+gameScreenl14 : string "                                        " ; pos 563 on the screen
+gameScreenl15 : string "                                        "
+gameScreenl16 : string "                                        "
 gameScreenl17 : string "                                        "
 gameScreenl18 : string "                                        "
 gameScreenl19 : string "                                        "
@@ -189,6 +191,134 @@ gameScreenl27 : string "                                        " ; pos 1084 on 
 gameScreenl28 : string "                                        "
 gameScreenl29 : string "                                        "
 ;--------------------------------------------------------------}
+; Game Screen YELLOW-------------------------------------------{
+gameScreenYellow    : string "                                        "
+gameScreenYellowl1  : string "                                        "
+gameScreenYellowl2  : string "                                        "
+gameScreenYellowl3  : string "                                        "
+gameScreenYellowl4  : string "                                        "
+gameScreenYellowl5  : string "                                        "
+gameScreenYellowl6  : string "                                        "
+gameScreenYellowl7  : string "                                        "
+gameScreenYellowl8  : string "                                        "
+gameScreenYellowl9  : string "                                        "
+gameScreenYellowl10 : string "                                        "
+gameScreenYellowl11 : string "C                                       "
+gameScreenYellowl12 : string "A                                       "
+gameScreenYellowl13 : string "A                                       "
+gameScreenYellowl14 : string "S                                       " ; pos 563 on the screen
+gameScreenYellowl15 : string "O                                       "
+gameScreenYellowl16 : string "                                        "
+gameScreenYellowl17 : string "                                        "
+gameScreenYellowl18 : string "                                        "
+gameScreenYellowl19 : string "                                        "
+gameScreenYellowl20 : string "                                        "
+gameScreenYellowl21 : string "                                        "
+gameScreenYellowl22 : string "                                        "
+gameScreenYellowl23 : string "                                        "
+gameScreenYellowl24 : string "                                        "
+gameScreenYellowl25 : string "                                        "
+gameScreenYellowl26 : string "                                        "
+gameScreenYellowl27 : string "                                        " ; pos 1084 on the screen
+gameScreenYellowl28 : string "                                        "
+gameScreenYellowl29 : string "                                        "
+;--------------------------------------------------------------}
+; Game Screen RED----------------------------------------------{
+gameScreenRed    : string "                                        "
+gameScreenRedl1  : string "                                        "
+gameScreenRedl2  : string "                                        "
+gameScreenRedl3  : string "                                        "
+gameScreenRedl4  : string "                                        "
+gameScreenRedl5  : string "                                        "
+gameScreenRedl6  : string "                                        "
+gameScreenRedl7  : string "                                        "
+gameScreenRedl8  : string "                                        "
+gameScreenRedl9  : string "                                        "
+gameScreenRedl10 : string "                                      F "
+gameScreenRedl11 : string "                                      E "
+gameScreenRedl12 : string "                                      D "
+gameScreenRedl13 : string "                                      E "
+gameScreenRedl14 : string "                                      R " ; pos 563 on the screen
+gameScreenRedl15 : string "                                      A "
+gameScreenRedl16 : string "                                      L "
+gameScreenRedl17 : string "                                        "
+gameScreenRedl18 : string "                                        "
+gameScreenRedl19 : string "                                        "
+gameScreenRedl20 : string "                                        "
+gameScreenRedl21 : string "                                        "
+gameScreenRedl22 : string "                                        "
+gameScreenRedl23 : string "                                        "
+gameScreenRedl24 : string "                                        "
+gameScreenRedl25 : string "                                        "
+gameScreenRedl26 : string "                                        "
+gameScreenRedl27 : string "                                        " ; pos 1084 on the screen
+gameScreenRedl28 : string "                                        "
+gameScreenRedl29 : string "                                        "
+;--------------------------------------------------------------}
+; Game Over Win Screen-----------------------------------------{
+gameOverWinScreen    : string "                                        "
+gameOverWinScreenl1  : string "                                        "
+gameOverWinScreenl2  : string "                                        "
+gameOverWinScreenl3  : string "                                        "
+gameOverWinScreenl4  : string "        YYY   YYY OOOOOOO UUU UUU       "
+gameOverWinScreenl5  : string "        Y  Y Y  Y O     O U U U U       "
+gameOverWinScreenl6  : string "         Y  Y  Y  O OOO O U U U U       "
+gameOverWinScreenl7  : string "          Y   Y   O O O O U U U U       "
+gameOverWinScreenl8  : string "           Y Y    O OOO O U UUU U       "
+gameOverWinScreenl9  : string "           Y Y    O     O U     U       "
+gameOverWinScreenl10 : string "           YYY    OOOOOOO UUUUUUU       "
+gameOverWinScreenl11 : string "                                        "
+gameOverWinScreenl12 : string "       SSSSS   A   V   V EEEEE DD       "
+gameOverWinScreenl13 : string "       S      A A  V   V E     D D      "
+gameOverWinScreenl14 : string "       SSSSS AAAAA  V V  EEE   D  D     " ; pos 563 on the screen
+gameOverWinScreenl15 : string "           S A   A  VVV  E     D D      "
+gameOverWinScreenl16 : string "       SSSSS A   A   V   EEEEE DD       "
+gameOverWinScreenl17 : string "                                        "
+gameOverWinScreenl18 : string "                                        "
+gameOverWinScreenl19 : string "      CCCCCC   A     A   SSSSS OOOOO    "
+gameOverWinScreenl20 : string "      C       A A   A A  S     O   O    "
+gameOverWinScreenl21 : string "      C      AAAAA AAAAA SSSSS O   O    "
+gameOverWinScreenl22 : string "      C      A   A A   A     S O   O    "
+gameOverWinScreenl23 : string "      CCCCCC A   A A   A SSSSS OOOOO    "
+gameOverWinScreenl24 : string "                                        "
+gameOverWinScreenl25 : string "                                        "
+gameOverWinScreenl26 : string "                                        "
+gameOverWinScreenl27 : string "                                        " ; pos 1084 on the screen
+gameOverWinScreenl28 : string "                                        "
+gameOverWinScreenl29 : string "                                        "
+;--------------------------------------------------------------}
+; Game Over Lose Screen----------------------------------------{
+gameOverLoseScreen    : string "                                        "
+gameOverLoseScreenl1  : string "                                        "
+gameOverLoseScreenl2  : string "                                        "
+gameOverLoseScreenl3  : string "                                        "
+gameOverLoseScreenl4  : string "      CCCCCC   A     A   SSSSS OOOOO    "
+gameOverLoseScreenl5  : string "      C       A A   A A  S     O   O    "
+gameOverLoseScreenl6  : string "      C      AAAAA AAAAA SSSSS O   O    "
+gameOverLoseScreenl7  : string "      C      A   A A   A     S O   O    "
+gameOverLoseScreenl8  : string "      CCCCCC A   A A   A SSSSS OOOOO    "
+gameOverLoseScreenl9  : string "                                        "
+gameOverLoseScreenl10 : string "             GGGGG OOOOO TTTTT          "
+gameOverLoseScreenl11 : string "             G     O   O   T            "
+gameOverLoseScreenl12 : string "             G GGG O   O   T            "
+gameOverLoseScreenl13 : string "             G   G O   O   T            "
+gameOverLoseScreenl14 : string "             GGGGG OOOOO   T            " ; pos 563 on the screen
+gameOverLoseScreenl15 : string "                                        "
+gameOverLoseScreenl16 : string "    I N   N V   V   A   DD   EEEE D     "
+gameOverLoseScreenl17 : string "    I NN  N V   V  A A  D D  E    D D   "
+gameOverLoseScreenl18 : string "    I N N N  V V  AAAAA D  D EE   D  D  "
+gameOverLoseScreenl19 : string "    I N  NN  V V  A   A D D  E    D D   "
+gameOverLoseScreenl20 : string "    I N   N   V   A   A DD   EEEE DD    "
+gameOverLoseScreenl21 : string "                                        "
+gameOverLoseScreenl22 : string "                                        "
+gameOverLoseScreenl23 : string "                                        "
+gameOverLoseScreenl24 : string "                                        "
+gameOverLoseScreenl25 : string "                                        "
+gameOverLoseScreenl26 : string "                                        "
+gameOverLoseScreenl27 : string "                                        " ; pos 1084 on the screen
+gameOverLoseScreenl28 : string "                                        "
+gameOverLoseScreenl29 : string "                                        "
+;--------------------------------------------------------------}
 
 main: ; main function; void () {
 
@@ -202,9 +332,15 @@ main: ; main function; void () {
 	loadn r1, #2816
 	call printScreenTransp
 	call waitForEnter
+	loadn r0, #gameScreenYellow
+	loadn r1, #2816
+	call printScreen
+	loadn r0, #gameScreenRed
+	loadn r1, #2304
+	call printScreenTransp
 	loadn r0, #gameScreen
 	loadn r1, #0
-	call printScreen
+	call printScreenTransp
 
 	loadn r0, #0
 	loadn r1, #50
@@ -225,6 +361,10 @@ halt
 ;--------------------------------------------------------------
 gameOverPlayerLost: ; game is over, you LOST!; void () {
 
+	loadn r0, #gameOverLoseScreen
+	loadn r1, #0
+	call printScreen
+
 	pop r5
 	pop r4
 	pop r3
@@ -239,6 +379,9 @@ rts
 ;--------------------------------------------------------------
 gameOverWinner: ; game is over, you WIN!; void () {
 
+	loadn r0, #gameOverWinScreen
+	loadn r1, #0
+	call printScreen
 
 	pop r7
 	pop r6
@@ -279,10 +422,10 @@ moveAlien: ; movimenta todos os aliens na tela; void () {
 		
 		; apagar o alien
 		loadn r4, #40
-		div r5, r2, r4
-		loadn r3, #gameScreen
+		;div r5, r2, r4
+		loadn r3, #currentScreen
 		add r3, r3, r2
-		add r3, r3, r5
+		;add r3, r3, r5
 		loadi r3, r3
 		outchar r3, r2
 
@@ -411,10 +554,12 @@ moveTiro: ; Move o tiro; void () {
 	loadn r4, #40
 	load r2, TiroPos 
 	div r0, r2, r4
-	loadn r6, #gameScreen
+	loadn r6, #gameScreenRed
 	add r6, r6, r2
 	add r6, r6, r0
 	loadi r7, r6 ; carrega o caracter da tela da posição do tiro
+	loadn r6, #2304
+	add r7, r7, r6
 	outchar r7, r2 ; imprime
 	loadn r5, #38
 	loadn r0, #1
@@ -432,7 +577,7 @@ moveTiro: ; Move o tiro; void () {
 		cmp r2, r7 ; verifica se o tiro bateu no alien
 		jne moveTiro_Loop_VerificaFim
 		; tiro bateu
-		loadn r1, #gameScreen
+		loadn r1, #currentScreen
 		add r1, r1, r2
 		loadi r1, r1
 		outchar r1, r2 ; apaga o alien atingido
@@ -682,9 +827,11 @@ printStrTransp: ; Print a string until \0 don't print ' '; void (r0 = Screen Pos
 	push r3	; Criterio de parada
 	push r4	; Recebe o codigo do caractere da Mensagem
 	push r5
+	push r6
 	
 	loadn r3, #'\0'	; Criterio de parada
 	loadn r5, #' '
+	loadn r6, #currentScreen
 
 	printStrTranspLoop:	
 		loadi r4, r1		; aponta para a memoria no endereco r1 e busca seu conteudo em r4
@@ -693,15 +840,18 @@ printStrTransp: ; Print a string until \0 don't print ' '; void (r0 = Screen Pos
 		cmp r4, r5
 		jeq printStrTranspLoopNoPrint
 		add r4, r2, r4		; soma a cor (r2) no codigo do caractere em r4
+		storei r6, r4		; salva o caracter a ser impresso na memoria
 		outchar r4, r0		; imprime o caractere cujo codigo está em r4 na posicao r0 da tela
 		printStrTranspLoopNoPrint:
 		inc r0				; incrementa a posicao que o proximo caractere sera' escrito na tela
 		inc r1				; incrementa o ponteiro para a mensagem na memoria
+		inc r6				; incrementa o ponteiro da 'tela' na memoria
 	jmp printStrTranspLoop		; goto Loop
 	
 	printStrTranspLoopExit:	
 	;---- Desempilhamento: resgata os valores dos registradores utilizados na Subrotina da Pilha
 
+	pop r6
 	pop r5
 	pop r4	
 	pop r3
@@ -720,15 +870,18 @@ printStr: ; Print a string until \0; void (r0 = Screen Pos, r1 = message Address
 	push r4	; Recebe o codigo do caractere da Mensagem
 	
 	loadn r3, #'\0'	; Criterio de parada
+	loadn r6, #currentScreen
 
 	printStrLoop:	
 		loadi r4, r1		; aponta para a memoria no endereco r1 e busca seu conteudo em r4
 		cmp r4, r3			; compara o codigo do caractere buscado com o criterio de parada
 		jeq printStrExit	; goto Final da rotina
 		add r4, r2, r4		; soma a cor (r2) no codigo do caractere em r4
+		storei r6, r4		; salva o caracter a ser impresso na memoria
 		outchar r4, r0		; imprime o caractere cujo codigo está em r4 na posicao r0 da tela
 		inc r0				; incrementa a posicao que o proximo caractere sera' escrito na tela
 		inc r1				; incrementa o ponteiro para a mensagem na memoria
+		inc r6				; incrementa o ponteiro da 'tela' na memoria
 	jmp printStrLoop		; goto Loop
 	
 	printStrExit:	
@@ -757,4 +910,3 @@ waitForEnter: ; just wait for a enter; void () ;{
 rts
 ;}
 ;--------------------------------------------------------------
-
